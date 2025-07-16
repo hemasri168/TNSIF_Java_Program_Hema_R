@@ -1,8 +1,5 @@
-//Program to demonstrate List collection for user defined objects and 
-//sort elements using comparable and comparator
 package com.tnsif.collection.comparable_comparator;
 
-import java.security.Permission;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -52,12 +49,12 @@ public class ListDemo {
 		System.out.println("---------------Person Details Before Sorting-------------------");
 		System.out.println(personList);
 
-		Comparator<Permission> pComp=new SortByName();
+		Comparator<Person> pComp=new SortByName();
 		Collections.sort(personList,pComp );
 		System.out.println("---------------Person Details After Sorting by Name -------------------");
 		System.out.println(personList);
 		
-		pComp=new Comparator();
+		pComp=new SortByCity();
 		Collections.sort(personList, pComp);
 		System.out.println("---------------Person Details After Sorting by City -------------------");
 		System.out.println(personList);

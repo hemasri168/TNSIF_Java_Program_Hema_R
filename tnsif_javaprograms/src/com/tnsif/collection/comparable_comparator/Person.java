@@ -1,5 +1,3 @@
-/Program to demonstrate Person entity using Comparator interface
-
 package com.tnsif.collection.comparable_comparator;
 
 import java.util.Comparator;

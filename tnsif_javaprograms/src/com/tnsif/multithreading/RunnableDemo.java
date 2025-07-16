@@ -1,10 +1,9 @@
-//executor class
 package com.tnsif.multithreading;
 
 public class RunnableDemo {
 	public static void main(String[] args) {
 		//using implementable class
-		Runnable obj = new Runnable(10, 20, "Hello");
+		UsingRunnable obj = new UsingRunnable(10, 20, "Hello");
 		
 
 		Runnable runnable = new Runnable() {
